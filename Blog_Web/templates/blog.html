@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	
+	<!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/fontawesome/css/all.css">
+
+    <!-- Main Stylesheet -->
+    <link  rel="stylesheet"  href="{% static 'css/style.css' %}" />
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+</head>
+<body>
+	
+	<br>
+	<div class="col-lg-4 col-md-5">
+		<div class="widget text-center">
+			<img class="author-thumb-sm rounded-circle d-block mx-auto" src="{% static 'images/image.jpeg' %}"  width="285px" height="290px"  alt="">
+			<br>
+			<h2 class="">Abid Hasan</h2>
+			144k <span>followers</span> . 330 <span>following</span>
+			<br>
+			<span>(Blood group O+)</span>
+			<br><br><br>
+			<span>----- Web Application Developer -----</span>
+			<br><br>
+			
+		        <a  class="btn btn-primary"  href="{% url 'follow' %}">+ Follow</a>
+	
+			<p class="mt-4">Lorem ipsum dolor sit coectetur adiing elit. Tincidunfywjt leo mi, viearra urna. Arcu ve isus, condimentum ut vulpate cursus por turpis.</p>
+			<ul class="list-inline mt-3">
+				<li class="list-inline-item">
+					<a href="#!" class="text-white text-primary-onHover p-2">
+						<span class="fab fa-twitter"></span>
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a href="#!" class="text-white text-primary-onHover p-2">
+						<span class="fab fa-facebook-f"></span>
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a href="#!" class="text-white text-primary-onHover p-2">
+						<span class="fab fa-instagram"></span>
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a href="#!" class="text-white text-primary-onHover p-2">
+						<span class="fab fa-linkedin-in"></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- end of author-widget -->
+
+		<div class="widget bg-white p-4 text-center">
+			<h2 class="widget-title text-white d-inline-block mt-4">Subscribe Blog</h2>
+			<p class="mt-4">Lorem ipsum dolor sit coectetur elit. Tincidu nfywjt leo mi, urna. Arcu ve isus, condimentum ut vulpate cursus por.</p>
+			<form action="#">
+				<div class="form-group">
+					<input type="email" class="form-control bg-transparent rounded-0 my-4" placeholder="Your Email Address">
+					<button class="btn btn-primary">Subscribe Now <img src="images/arrow-right.png" alt=""></button>
+				</div>
+			</form>
+		</div>
+		<!-- end of subscription-widget -->
+
+		<div class="widget">
+			<div class="mb-5 text-center">
+				<h2 class="widget-title text-white d-inline-block">Featured Posts</h2>
+			</div>
+			<div class="card post-item bg-transparent border-0 mb-5">
+				<a href="post-details.html">
+					<img class="card-img-top rounded-0" src="images/post/post-sm/01.png" alt="">
+				</a>
+				<div class="card-body px-0">
+					<h2 class="card-title">
+						<a class="text-white opacity-75-onHover" href="post-details.html">Excepteur ado Do minimal duis laborum Fugiat ea</a>
+					</h2>
+					<ul class="post-meta mt-3 mb-4">
+						<li class="d-inline-block mr-3">
+							<span class="fas fa-clock text-primary"></span>
+							<a class="ml-1" href="#">24 April, 2016</a>
+						</li>
+						<li class="d-inline-block">
+							<span class="fas fa-list-alt text-primary"></span>
+							<a class="ml-1" href="#">Photography</a>
+						</li>
+					</ul>
+					<a href="post-details.html" class="btn btn-primary">Read More <img src="images/arrow-right.png" alt=""></a>
+				</div>
+			</div>
+			<!-- end of widget-post-item -->
+			<div class="card post-item bg-transparent border-0 mb-5">
+				<a href="post-details.html">
+					<img class="card-img-top rounded-0" src="images/post/post-sm/02.png" alt="">
+				</a>
+				<div class="card-body px-0">
+					<h2 class="card-title">
+						<a class="text-white opacity-75-onHover" href="post-details.html">Excepteur ado Do minimal duis laborum Fugiat ea</a>
+					</h2>
+					<ul class="post-meta mt-3 mb-4">
+						<li class="d-inline-block mr-3">
+							<span class="fas fa-clock text-primary"></span>
+							<a class="ml-1" href="#">24 April, 2016</a>
+						</li>
+						<li class="d-inline-block">
+							<span class="fas fa-list-alt text-primary"></span>
+							<a class="ml-1" href="#">Photography</a>
+						</li>
+					</ul>
+					<a href="post-details.html" class="btn btn-primary">Read More <img src="images/arrow-right.png" alt=""></a>
+				</div>
+			</div>
+			<!-- end of widget-post-item -->
+		</div>
+		<!-- end of post-items widget -->
+	</div>
+</div>
+</div>
+
+<div class="row">
+	<div class="col-md-10">
+		<div class="contact-form bg-dark">
+			<h1 class="text-white add-letter-space mb-5">Lets Contact Us</h1>
+			<form method="POST" class="needs-validation" novalidate>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group mb-5">
+							<label for="firstName" class="text-black-300">Your First Name</label>
+							<input type="text" id="firstName" class="form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0" placeholder="Robert Lee" required>
+							<p class="invalid-feedback">Your first-name is required!</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group mb-5">
+							<label for="lastName" class="text-black-300">Your Last Name</label>
+							<input type="text" id="lastName" class="form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0" placeholder="Anderson" required>
+							<p class="invalid-feedback">Your last-name is required!</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group mb-5">
+							<label for="email" class="text-black-300">E-Mail Address</label>
+							<input type="email" id="email" class="form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0" placeholder="kevin.jones@mail.com" required>
+							<p class="invalid-feedback">Your email is required!</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group mb-5">
+							<label class="text-black-300">What Is This About?</label>
+							<select class="d-block w-100">
+								<option value="1">Personal Proposal</option>
+								<option value="2">Business Purpose</option>
+								<option value="3">Want to say hello</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group mb-5">
+							<label for="message" class="text-black-300">Your message</label>
+							<textarea name="message" class="form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0" placeholder="Lorem Ipsum is simply dummy text of the printing and..." required></textarea>
+							<p class="invalid-feedback">Message is required!</p>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<button type="submit" class="btn btn-sm btn-primary">Send Now <img src="images/arrow-right.png" alt=""></button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</div>
+
+
+<!-- start of footer -->
+<footer class="bg-dark">
+<div class="container">
+<div class="row text-center">
+<div class="col-lg-3 col-sm-6 mb-5">
+	<h5 class="font-primary text-white mb-4">Inspirations</h5>
+	<ul class="list-unstyled">
+		<li><a href="#!">Privacy State</a></li>
+		<li><a href="#!">Privacy</a></li>
+		<li><a href="#!">State</a></li>
+		<li><a href="#!">Privacy</a></li>
+	</ul>
+</div>
+<div class="col-lg-3 col-sm-6 mb-5">
+	<h5 class="font-primary text-white mb-4">Templates</h5>
+	<ul class="list-unstyled">
+		<li><a href="#!">Privacy State</a></li>
+		<li><a href="#!">Privacy</a></li>
+		<li><a href="#!">State</a></li>
+		<li><a href="#!">Privacy</a></li>
+	</ul>
+</div>
+<div class="col-lg-3 col-sm-6 mb-5">
+	<h5 class="font-primary text-white mb-4">Resource</h5>
+	<ul class="list-unstyled">
+		<li><a href="#!">Privacy State</a></li>
+		<li><a href="#!">Privacy</a></li>
+		<li><a href="#!">State</a></li>
+		<li><a href="#!">Privacy</a></li>
+	</ul>
+</div>
+<div class="col-lg-3 col-sm-6 mb-5">
+	<h5 class="font-primary text-white mb-4">Company</h5>
+	<ul class="list-unstyled">
+		<li><a href="#!">Privacy State</a></li>
+		<li><a href="#!">Privacy</a></li>
+		<li><a href="#!">State</a></li>
+		<li><a href="#!">Privacy</a></li>
+	</ul>
+</div>
+</div>
+</div>
+</footer>
+<!-- end of footer -->
+</div>
+
+</section>
+<!-- END main-wrapper -->
+
+<!-- All JS Files -->
+<script>
+	/**
+ * WEBSITE: https://themefisher.com
+ * TWITTER: https://twitter.com/themefisher
+ * FACEBOOK: https://www.facebook.com/themefisher
+ * GITHUB: https://github.com/themefisher/
+ */
+
+(function ($) {
+  "use strict";
+
+  $(window).on("load", function () {
+    // PreLoader Init
+    function preLoader() {
+      $("body").addClass("loaded");
+      $(".preloader-wrapper").addClass("loaded");
+    }
+    preLoader();
+  });
+
+  $(document).ready(function () {
+    // navbarToggle Init
+    function navbarToggle() {
+      $(".nav-toggle").on("click", function () {
+        $(".sidenav").toggleClass("show");
+        $(".nav-toggle span").toggleClass("fa-times fa-bars");
+        $(".nav-toggle-overlay").toggleClass("show");
+      });
+      $(".nav-toggle-overlay").on("click", function () {
+        $(".sidenav").removeClass("show");
+        $(".nav-toggle span").toggleClass("fa-bars fa-times");
+        $(".nav-toggle-overlay").removeClass("show");
+      });
+    }
+    navbarToggle();
+
+    // form validation (only for this page)
+    window.addEventListener(
+      "load",
+      function () {
+        var forms = document.getElementsByClassName("needs-validation");
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      },
+      false
+    );
+  });
+})(jQuery);
+
+</script>
+</body>
+</html>
